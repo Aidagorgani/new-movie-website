@@ -17,8 +17,8 @@ body {
   color:#3F3E87;
 }
 
-.hero {
-  background-image: url("https://raw.githubusercontent.com/Aidagorgani/new-movie-website/master/Image/image.png");
+body.hero {
+  background-image: url("../../Image/hero.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
