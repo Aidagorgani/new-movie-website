@@ -17,8 +17,8 @@ body {
   color:#3F3E87;
 }
 
-body.hero {
-  background: url('../../Image/hero.png');
+.hero {
+  background: url('Image/hero.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
