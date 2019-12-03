@@ -18,7 +18,7 @@ body {
 }
 
 .hero {
-  background-image: url('../Image/hero.png');
+  background-image: url('../Image/hero.PNG');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
