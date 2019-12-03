@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #E6DBD4;
+  font-family: "Roboto";
+  color:#3F3E87;
+}
+
+.hero {
+  background-image: url("../../Image/hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-bottom: 35%;
+}
+
+.flex-container-first {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+  font-size: 17px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.flex-container-second {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem 0;
+  position: relative;
+  font-family: "Roboto";
+  color: #777272;
+  border-bottom: 2px solid #777272;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: right;
+ }
+
+ .logo {
+  width: 3rem;
+ }
+
+.upcoming-movies, .sort-by, .list, .grid {
+  font-size: 15px;
+  flex: 1;
+  line-height: 22px;
+ }
+
+ .grid-img, .list-img {
+   width: 30%;
+   padding-left: 5%;
+ }
+
+ .movie-img {
+  width:90%;
+  margin: 2rem 5%;
+ }
+
+ .movie-info {
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+
+ .movie-info {
+   border-bottom: 2px solid #777272;
+ }
+
+ .view-more {
+   color: #777272;
+   text-align: center;
+ }
+
+ .movies-p, .movies {
+   color: #E6DBD4;
+ }
+
+ #menu li a {
+   color: #E6DBD4;
+ }
+
+ #view-more a {
+   color: #777272;
+   text-decoration: underline;
+ }
+
+ .view-all {
+   text-align: center;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   font-family: "Roboto";
+ }
+
+ footer {
+   height: 5rem;
+   background-color: #777272;
+   text-align: center;
+ }
+
+ .made-in {
+   color: #E6DBD4;
+   font-size: 12px;
+   font-family: "Roboto";
+   padding-top: 3.5rem;
+   font-weight: 600;
+ }
+
+ .list-p, .list-img, .grid-p, .grid-img {
+   display: inline;
+ }
+
+ .movie-title {
+   color: #113654;
+   font-size: 22px;
+   font-family: "Roboto";
+   margin-bottom: 1rem;
+   text-align: center;
+   line-height: 30px;
+ }
+
+ .movie-detail {
+   font-family: "Roboto";
+   margin-bottom: 2rem;
+   color: #777272;
+   line-height: 25px;
+   font-weight: 600;
+ }
+
+ .movie-p {
+   font-family: "Roboto";
+   color: #777272;
+   margin-bottom: 2rem;
+   line-height: 25px;
+   font-size: 15px;
+ }
+
+ .movie-directors {
+   color: #113654;
+   font-family: "Roboto";
+   line-height: 2rem;
+   margin-bottom: 2rem;
+ }
+
+  .button {
+    border: 2px solid #3C6175;
+    background-color: #3C6175;
+    border-radius: 10px;
+    color: white;
+    font-family: "Roboto";
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left:0;
+    margin-bottom: 2rem;
+  }
+
+  #movie-texts-id li a {
+    color: white;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  @media screen and (min-width:768px) {
+
+    .logo {
+      width:5rem;
+      flex: 6;
+      text-align: left;
+    }
+
+    .movies, .about, .contact {
+       flex:1.5;
+       font-size: 20px;
+    }
+
+    .upcoming-movies {
+      font-size: 30px;
+      text-align: left;
+      flex: 8;
+    }
+
+    .sort-by, .list, .grid {
+      flex: 1.5;
+      text-align: right;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .flex-container-second {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    .grid-img, .list-img {
+      width: 30%;
+      padding-left: 5%;
+    }
+
+    .movie-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "movie-img"
+      "movie-texts";
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    .movie-img {
+      width:50%;
+      margin: 2rem 25%;
+      grid-area: movie-img;
+    }
+
+    .movie-title {
+      text-align: left;
+    }
+
+    .movie-texts {
+      grid-area: movie-texts;
+      margin: 2rem 20%;
+    }
+
+    .button {
+      margin-top: 2rem;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .flex-container-first {
+      height: 7rem;
+      font-family: "Roboto";
+    }
+
+    .view-more {
+      color: #777272;
+    }
+
+    .movie-p {
+      font-family: "Roboto";
+      color: #777272;
+      margin-bottom: 1rem;
+      line-height: 25px;
+      font-size: 15px;
+    }
+}
+
+
+  @media screen and (min-width:1025px) {
+
+    .logo {
+      width:5rem;
+      flex: 6;
+      text-align: left;
+    }
+
+    .movies, .about, .contact {
+       flex:1;
+       font-size: 20px;
+    }
+
+    .upcoming-movies {
+      font-size: 30px;
+      text-align: left;
+      flex: 8;
+    }
+
+    .sort-by, .list, .grid {
+      flex: 1;
+      text-align: right;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .flex-container-second {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    .grid-img, .list-img {
+      width: 30%;
+      padding-left: 5%;
+    }
+
+    .movie-img {
+      width:70%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      grid-area: movie-img;
+      margin-left: 30%;
+    }
+
+    .movie-title {
+      text-align: left;
+    }
+
+    .movie-info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+      "movie-img movie-texts";
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+
+    .movie-texts {
+      grid-area: movie-texts;
+      margin-top: 2rem;
+      margin-left: 10%;
+      margin-right: 20%;
+    }
+
+    .button {
+      margin-left:0;
+      margin-top: 3rem;
+      margin-left:0;
+      margin-right: 50%;
+    }
+
+    .flex-container-first {
+      height: 7rem;
+      font-family: "Roboto";
+    }
+
+    .view-more {
+      color: #777272;
+    }
+
+    .movie-p {
+      font-family: "Roboto";
+      color: #777272;
+      margin-bottom: 2rem;
+      line-height: 25px;
+      font-size: 15px;
+    }
+
+}
